@@ -1,11 +1,24 @@
 package main
 
-import (
-	"fazztrack/demo/fazz"
-)
-
+import "fmt"
 
 
 func main() {
-	fazz.FazzFoodAndDitraktir(25000, "DITRAKTIR60", 1, true)
+	 matrix := [][][]int{
+		{
+			{1,2,3,4},
+			{1,2,3,4},},
+		{},
+		{},
+		{
+			{1,2,10,4},
+			{1,2,3,4},
+		} ,
+	}
+	fmt.Println(matrix[3][0][2])
+	fmt.Println(matrix[0][1][2])
+ 
 }
+
+
+
