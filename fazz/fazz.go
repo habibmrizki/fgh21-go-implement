@@ -1,13 +1,11 @@
-package main
+package fazz
 
 import (
 	"fazztrack/demo/calc"
 	"fmt"
 )
 
-
-
-func fazzFoodAndDitraktir(price int, voucher string, distance int, tax bool) {
+func FazzFoodAndDitraktir(price int, voucher string, distance int, tax bool) {
 	var discont int = calc.Total(price, voucher)
 	var shippingFee int = calc.Distance(distance)
 	var taxValue int = calc.Tax(tax, price)
@@ -18,7 +16,4 @@ func fazzFoodAndDitraktir(price int, voucher string, distance int, tax bool) {
 	fmt.Printf("Biaya Antar: %d\n", shippingFee)
 	fmt.Printf("Pajak: %d\n", taxValue)
 	fmt.Printf("Sub Total: %d\n", subTotal)
-}
-func main() {
-	fazzFoodAndDitraktir(25000, "DITRAKTIR60", 1, true)
 }
