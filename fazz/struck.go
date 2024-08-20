@@ -11,7 +11,7 @@ type Bio struct {
 type SkillSet struct {
 	name string
 }
-func main() {
+func Struck() {
 	
  bio := []Bio {
 	{

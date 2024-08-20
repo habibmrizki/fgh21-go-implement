@@ -11,10 +11,7 @@ import "fmt"
 		cigarVariant  []string
 	}
 
-
-func Survey() {
-
-
+	func Survey() {
 	surveys := []survey{
 		survey{
 			name: "habib",
